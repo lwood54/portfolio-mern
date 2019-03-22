@@ -1,13 +1,14 @@
 {
-  "name": "portfolio-mern",
-  "version": "1.0.0",
-  "description": "Portfolio site for Logan Wood",
-  "main": "server.js",
-  "author": "Logan Wood",
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.19"
-  }
+        "name": "portfolio-mern",
+        "version": "1.0.0",
+        "main": "index.js",
+        "scripts": {
+                "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+        },
+        "repository": "https://github.com/lwood54/portfolio-mern.git",
+        "author": "Logan Wood <lwood3499@gmail.com>",
+        "license": "MIT",
+        "dependencies": {
+                "concurrently": "^4.1.0"
+        }
 }
